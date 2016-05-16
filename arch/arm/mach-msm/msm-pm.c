@@ -841,7 +841,6 @@ int msm_cpu_pm_enter_sleep(enum msm_pm_sleep_mode mode, bool from_idle)
 int msm_pm_wait_cpu_shutdown(unsigned int cpu)
 
 	int timeout = 0;
-msm: pm: Fix cpu collapse timeout
 
 	if (!msm_pm_slp_sts)
 		return 0;
